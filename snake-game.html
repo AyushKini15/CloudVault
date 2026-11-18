@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>CloudVault – Snake Game</title><link rel="stylesheet" href="css/style.css">
+<style>.game{max-width:420px;margin:30px auto;text-align:center}canvas{width:100%;max-width:400px;aspect-ratio:1;background:#0f172a;border-radius:12px;touch-action:none}
+.scores{display:flex;justify-content:space-between;margin:10px 0;font-weight:700}.ctrl{display:grid;grid-template-columns:repeat(3,64px);gap:8px;justify-content:center;margin:16px 0}
+.ctrl button{height:64px;font-size:1.5rem;border:0;border-radius:12px;background:var(--primary);color:#fff;touch-action:manipulation}.ctrl .u{grid-column:2}.ctrl .l{grid-column:1;grid-row:2}.ctrl .d{grid-column:2;grid-row:2}.ctrl .r{grid-column:3;grid-row:2}
+.row{display:flex;gap:10px;justify-content:center}</style></head><body>
+<header class="nav"><div class="container"><a class="brand" href="index.html">Cloud<span>Vault</span></a><a class="btn secondary" href="index.html">Home</a></div></header>
+<main class="game card"><h2>Mini Games – Snake Game</h2>
+<div class="scores"><span>Score: <span id="score">0</span></span><span>Best: <span id="best">0</span></span></div>
+<canvas id="board" width="400" height="400"></canvas><p id="msg" style="color:var(--muted)">Press Start. Arrow keys / WASD / swipe / buttons.</p>
+<div class="row"><button class="btn" id="startPause">Start</button><button class="btn secondary" id="restart">Restart</button></div>
+<div class="ctrl"><button class="u" data-d="up">▲</button><button class="l" data-d="left">◀</button><button class="d" data-d="down">▼</button><button class="r" data-d="right">▶</button></div></main>
+<script src="js/snake-game.js"></script></body></html>

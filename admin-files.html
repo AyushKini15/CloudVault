@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CloudVault – Manage Files</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/responsive.css"></head><body>
+<div id="app"></div>
+<template id="page">
+<div class="toolbar"><input id="q" type="search" placeholder="Search files by name…">
+<select id="cat"><option value="">All types</option><option value="image">Images</option><option value="video">Videos</option><option value="document">PDFs</option></select>
+<select id="avail"><option value="">Any availability</option><option value="yes">Available</option><option value="no">Hidden</option></select><a class="btn" href="upload.html">Upload</a></div>
+<div id="list"></div><div class="pager" id="pager"></div>
+</template>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="js/env.js"></script><script src="js/supabase-config.js"></script><script src="js/auth.js"></script><script src="js/user-common.js"></script><script src="js/admin-common.js"></script><script src="js/file-management.js"></script></body></html>

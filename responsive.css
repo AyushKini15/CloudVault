@@ -1,0 +1,10 @@
+@media (max-width:860px){
+  .sidebar{transform:translateX(-100%)}.sidebar.open{transform:none}.overlay.show{display:block}
+  .main{margin-left:0}#menu{display:block}#content{padding:16px}.topbar{padding:0 10px}
+  table.t thead{display:none}table.t,table.t tbody,table.t tr,table.t td{display:block;width:100%}
+  table.t tr{margin-bottom:12px;background:#fff;border-radius:12px;box-shadow:var(--shadow);padding:6px 0}
+  table.t td{border:0;display:flex;justify-content:space-between;gap:12px;padding:8px 14px;text-align:right}
+  table.t td::before{content:attr(data-label);font-weight:600;color:var(--muted);text-align:left}
+  .files{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+}
+@media (max-width:860px){.uitem .row{grid-template-columns:1fr}.two{grid-template-columns:1fr}.actions{justify-content:flex-end}}

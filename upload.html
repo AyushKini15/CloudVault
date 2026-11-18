@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CloudVault – Upload Files</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/responsive.css"></head><body>
+<div id="app"></div>
+<template id="page">
+<div class="drop" id="drop"><div style="font-size:2.4rem">☁️</div><b>Drag &amp; drop files here, or click to browse</b>
+<div class="fmeta">Images (JPG, PNG, WEBP, GIF), videos (MP4, WEBM, MOV), PDFs · up to 500 MB each</div></div>
+<input type="file" id="picker" multiple hidden accept=".jpg,.jpeg,.png,.webp,.gif,.mp4,.webm,.mov,.pdf">
+<div id="queue"></div>
+<label style="display:flex;gap:8px;margin:18px 0"><input type="checkbox" id="public"> Make these files available to all users (otherwise assign them to specific users afterwards)</label>
+<button class="btn" id="go" disabled>Upload all</button>
+</template>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="js/env.js"></script><script src="js/supabase-config.js"></script><script src="js/auth.js"></script><script src="js/user-common.js"></script><script src="js/admin-common.js"></script><script src="js/file-upload.js"></script></body></html>

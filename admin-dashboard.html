@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CloudVault – Admin Dashboard</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/responsive.css"></head><body>
+<div id="app"></div>
+<template id="page">
+<h1 id="welcome" style="margin-top:0">Welcome</h1>
+<div class="stats" id="stats"><div class="spinner"></div></div>
+<div class="two"><div class="card"><h3 style="margin-top:0">Files by type</h3><div id="c-types"></div></div><div class="card"><h3 style="margin-top:0">Downloads, last 7 days</h3><div id="c-days"></div></div></div>
+<div class="section-title"><h3>Recent user activity</h3><a href="downloads.html">Full history →</a></div><div id="activity"><div class="spinner"></div></div>
+<div class="section-title"><h3>Mini Games – Snake Game</h3></div><div class="card"><a class="btn" href="snake-game.html">Play Snake</a></div>
+</template>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="js/env.js"></script><script src="js/supabase-config.js"></script><script src="js/auth.js"></script><script src="js/user-common.js"></script><script src="js/admin-common.js"></script><script src="js/admin-dashboard.js"></script></body></html>

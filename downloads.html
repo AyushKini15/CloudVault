@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CloudVault – Download History</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/responsive.css"></head><body>
+<div id="app"></div>
+<template id="page">
+<div class="stat" style="max-width:220px;margin-bottom:18px"><div class="n" id="total">–</div><div class="l">Total downloads (matching filters)</div></div>
+<div class="toolbar"><input id="uq" type="search" placeholder="Search username / email…"><input id="fq" type="search" placeholder="Search file name…">
+<select id="user"><option value="">All users</option></select><input type="date" id="from" aria-label="From date"><input type="date" id="to" aria-label="To date"><button class="btn secondary" id="clear">Clear</button></div>
+<div id="list"></div><div class="pager" id="pager"></div>
+</template>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="js/env.js"></script><script src="js/supabase-config.js"></script><script src="js/auth.js"></script><script src="js/user-common.js"></script><script src="js/admin-common.js"></script><script src="js/download-history.js"></script></body></html>
